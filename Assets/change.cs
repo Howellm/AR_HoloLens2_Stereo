@@ -39,7 +39,7 @@ public class change : MonoBehaviour
         // Debug.Log(this.gameObject + " " + distance);
 //         Debug.Log(this.gameObject + "TransformPoint:" + cube.transform.TransformPoint (this.transform.localPosition));
         if(order == true){
-            if(distance < 0.7f){
+            if(distance < 0.6f){
                 startColor = Color.red;
                 endColor = Color.yellow;
                 if(distance <= 0.3f){
@@ -47,11 +47,11 @@ public class change : MonoBehaviour
                 }else{
                     t = (distance - 0.3f)/0.6f;
                 }
-            }else if(0.7f <= distance){
+            }else if(0.6f <= distance){
                 startColor = Color.yellow;
                 endColor = Color.green;
                 if(distance <= 1.7f){
-                    t = distance - 0.7f;
+                    t = distance - 0.6f;
                 }else{
                     t = 1;
                 }
